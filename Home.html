@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nanum+Gothic:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Home - Mardi Gras New Orleans</title>
+    <link rel="shortcut icon" href="Media/minilogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+            background-color: #0d0d0d;
+        }
+
+        .fixed-header,
+        .fixed-footer {
+            width: 100vw;
+            position: fixed;
+            background: #0d0d0d;
+            padding: 20px 0px;
+            color: #8cbf3f;
+        }
+
+        .fixed-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .fixed-footer {
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        /*  .container1 {
+            width: 100%;
+            /* position: absolute; 
+            top: 90px;
+            height: 300px;
+
+        } */
+
+        nav a {
+            color: #f2cc0f;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Henny Penny';
+            padding: 10px 30px;
+        }
+
+        nav a:hover {
+            color: #9453a6;
+        }
+
+        nav span img {
+            width: 3.5vw;
+            height: 3.5vw;
+            position: absolute;
+            left: 47.5vw;
+            top: 1px;
+        }
+
+        /*   div img {
+            width: 100%;
+            height: 823px;
+            margin: 0 auto;
+        } */
+
+        .exp h1 {
+            text-align: center;
+            font-family: 'La Belle Aurore', cursive;
+        }
+
+        .exp p {
+            font-family: 'sans-serif';
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            font-family: 'La Belle Aurore', cursive;
+            color: #9453a6;
+        }
+
+
+        .advButton2 {
+            background-color: rebeccapurple;
+            border: 2px solid #0d0d0d;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            display: inline-block;
+            font-size: 20px;
+            margin: 10px 30px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+        @media screen and (max-width: 500px) {
+            .fixed-header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+                left: 20vw;
+            }
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #f2f2f2;
+        }
+
+        /* Hamburger______________*/
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #0d0d0d;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2cc0f;
+            text-align: center;
+            line-height: 0rem;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #9453a6;
+            color: white;
+        }
+
+        .topnav a.active {
+            color: #f2cc0f;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: left;
+                display: block;
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .container1 {
+                width: 90%;
+                margin: 5vw;
+                padding-top: 20vw;
+            }
+
+            .container span img {
+                width: 10vw;
+                height: 14vw;
+                padding-top: 3vw;
+                display: none;
+            }
+
+        }
+
+        /* yyyyyy */
+        .pic {
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+            border: 3px solid #8cbf3f;
+            height: 100pt;
+            width: 100pt;
+        }
+
+        .spons {
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <div class="topnav" id="myTopnav">
+
+                    <span>
+                        <img src="Media/Logo.png" alt="Logo">
+                    </span>
+                    <a href="/home.html" class="active">Home</a>
+                    <a href="/About.html">About</a>
+                    <a href="/media.html">Media</a>
+                    <a href="/faq.html">Faq</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myTopnav");
+                        if (x.className === "topnav") {
+                            x.className += " responsive";
+                        } else {
+                            x.className = "topnav";
+                        }
+                    }
+                </script>
+            </nav>
+        </div>
+    </div>
+
+
+    <div class="container1">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner">
+
+                <div class="item active">
+                    <img src="Media/home5.jpg" alt="Mardi-Gras" style="width:100%">
+                    <div class="carousel-caption">
+                        <h3>״The colors of Mardi Gras – purple, gold and green – represent justice, power and faith
+                            respectively.״</h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Media/home2.jpg" alt="Mardi-Gras" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>״Mardi Gras, also known as Fat Tuesday, is a festive holiday celebrated before the start of
+                            the Christian season of Lent״</h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Media/home3.jpeg" alt="Mardi-Gras" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>
+                            ״The origins of Mardi Gras can be traced back to ancient Roman pagan celebrations.״
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Media/home4.jpg" alt="Mardi-Gras" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>
+                            ״Mardi Gras is most famously celebrated in New Orleans, Louisiana, where colorful parades
+                            and
+                            street parties are held.״
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="Media/home1.jpg" alt="Mardi-Gras" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>
+                            ״Mardi Gras is a time for people to let loose and enjoy themselves before the solemnity of
+                            Lent begins.״
+
+                        </h3>
+                    </div>
+                </div>
+            </div>
+
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="exp">
+        <h1>Our Festival</h1>
+        <p>
+            Long ago, Mardi Gras was a violent day for many Mardi Gras Indians. It was a day often used to settle
+            scores.
+            The police
+            were often unable to intervene due to the general confusion surrounding Mardi Gras events in the city,
+            when
+            the streets
+            were crowded and everyone was masked. This kept many families away from the "parade," and created much
+            worry
+            and concern
+            for a mother whose children wanted to join the Indians.
+
+            Mardi Gras, as a celebration of life before the more-somber occasion of Ash Wednesday, nearly always
+            involves the use of
+            masks and costumes by its participants, and the most popular celebratory colors are purple, green, and
+            gold.
+            In New
+            Orleans, for example, these often take the shape of fairies, animals, people from myths, or various
+            Medieval
+            costumes as well as clowns and Indians (Native Americans). However, many costumes today are simply
+            elaborate
+            creations of colored feathers and capes. Unlike Halloween costumery, Mardi Gras costumes are not usually
+            associated with
+            such things as zombies, mummies, bats, blood, and the like, though death may be a theme in some. The
+            Venice
+            tradition
+            has brought golden masks into the usual round of costumes.
+        </p>
+    </div>
+    <h1>Our Sponsers</h1>
+    <div class="spons">
+        <ul class="list-group">
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad11.png" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>Walk-ons</h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        There’s really no better way to describe the uniqueness of Walk-On’s Sports Bistreaux. We start
+                        every
+                        dish
+                        from scratch and use fresh ingredients to bring our mouthwatering, Cajun cuisine to life in
+                        every
+                        restaurant. Whether you’re here for dinner with the family, date night, cocktails with the
+                        girls, or to
+                        watch a game on the big screen.
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad22.jpg" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>
+                            Sheratin New Orelands Hortal
+                        </h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        Our Hotel offers a fantastic location, putting you just a 5-minute walk from
+                        Canal Street and Bourbon
+                        Street. Guests can take a dip in the outdoor pool or grab a bite to eat at Roux Bistro,
+                        serves breakfas,lunch. Other highlights at this upscale hotel include a bar/lounge, a 24-hour
+                        fitness center.
+                        location and local sightseeing get good marks from fellow travelers.
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad33.jpg" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>
+                            Ace Hotel New Orleans
+                        </h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        A stone’s throw from the French Quarter, in the soul of the Deep South
+
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad44.png" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>
+                            The Ritz Carlton New Orleans
+                        </h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        Rich in history and personality, New Orleans is unlike any other US city. Honoring its spirit
+                        and
+                        elegance,
+                        The Ritz-Carlton, New Orleans invites visitors to its French Quarter retreat, set within a 1908
+                        Beaux
+                        Arts
+                        building. Here, one can bask in the silence of the hotel’s beautiful courtyard.
+
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad55.png" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>
+                            Premium Parking - p402
+                        </h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        Premium Parking - P402 has 2.5 stars from 19 reviews.
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad66.jpg" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>
+                            Louisiana Children's Museum
+                        </h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        Louisiana Children’s Museum has cleaning and safety procedures throughout our museum that
+                        protect the
+                        health
+                        and well-being of our guests, volunteers, and staff members.
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad77.png" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>
+                            Museum of Death
+                        </h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        Museum of Death
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="list-group-item row">
+                <div class="col-3 col-sm-12">
+                    <div>
+                        <div>
+                            <img src="Media/ad8.jpg" alt="model" class="pic">
+                        </div>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <h1>
+                            Haunted Museum
+                        </h1>
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        Join us for a spirited adventure through Zak Bagans’ The Haunted Museum in Las Vegas, as seen on
+                        the
+                        Travel
+                        Channel’s Ghost Adventures! See original collectibles from haunted sites and hear the
+                        bone-chilling
+                        stories
+                        of the paranormal activity that surrounds them
+                    </div>
+                    <div class="col-3 col-sm-12">
+                        <button class="advButton2" onclick="window.location.href = 'https://ide.geeksforgeeks.org';">
+                            Read More
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="fixed-footer">
+        <div class="container_buttom">Copyright &copy; ORDAV 2023</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

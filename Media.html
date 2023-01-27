@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nanum+Gothic:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Media - Mardi Gras New Orleans</title>
+    <link rel="shortcut icon" href="media/minilogo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            padding-top: 60px;
+            padding-bottom: 40px;
+            background-color: #0d0d0d;
+        }
+
+        .fixed-header,
+        .fixed-footer {
+            width: 100vw;
+            position: fixed;
+            background: #0d0d0d;
+            padding: 20px 0px;
+            color: #8cbf3f;
+        }
+
+        .fixed-header {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .fixed-footer {
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            font-size: 15px;
+        }
+
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+
+        }
+
+        /*  .container1 {
+            width: 100%;
+            /* position: absolute; 
+            top: 90px;
+            height: 300px;
+
+        } */
+
+        nav a {
+            color: #f2cc0f;
+            font-size: 20px;
+            text-decoration: none;
+            font-family: 'Henny Penny';
+            padding: 10px 30px;
+        }
+
+        nav a:hover {
+            color: #9453a6;
+        }
+
+        nav span img {
+            width: 3.5vw;
+            height: 3.5vw;
+            position: absolute;
+            left: 47.5vw;
+            top: 4px;
+        }
+
+
+        .exp h1 {
+            text-align: center;
+            font-family: 'La Belle Aurore', cursive;
+        }
+
+        .exp p {
+            font-family: 'sans-serif';
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            font-family: 'La Belle Aurore', cursive;
+            color: #9453a6;
+        }
+
+
+        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap');
+
+        @media screen and (max-width: 500px) {
+            .fixed-header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+                left: 20vw;
+            }
+        }
+
+        p {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #f2f2f2;
+        }
+
+
+        .Yout {
+            text-align: center;
+        }
+
+
+        img {
+            display: block;
+            margin: 0 auto;
+            height: 100pt;
+            width: 100pt;
+        }
+
+
+
+
+        /* Hamburger______________*/
+
+        /* Hamburger______________*/
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #0d0d0d;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2cc0f;
+            text-align: center;
+            line-height: 0rem;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #9453a6;
+            color: white;
+        }
+
+        .topnav a.active {
+            color: #f2cc0f;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 650px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: left;
+                display: block;
+            }
+
+        }
+
+        @media screen and (max-width: 1000px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .container span img {
+                width: 10vw;
+                height: 14vw;
+                padding-top: 3vw;
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <div class="topnav" id="myTopnav">
+
+                    <span>
+                        <img src="Media/Logo.png" alt="Logo">
+                    </span>
+                    <a href="/home.html" class="active">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/media.html">Media</a>
+                    <a href="/faq.html">Faq</a>
+                    <a href="/contact.html">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    </nav>
+    </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var small = { width: "500px", height: "500px" };
+            var large = { width: "1800px", height: "1800px" };
+            var count = 1;
+            $(".imgtab").css(small).on('click', function () {
+                $(this).animate((count == 1) ? large : small);
+                count = 1 - count;
+            });
+        });
+    </script>
+    <br />
+    <br />
+    <h1>Videos from the last event</h1>
+    <div class="Yout">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/C8mJ2C2cbd0" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R2v3E00bceo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EkIZwXbSh-Y" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1>Pictures from the last event</h1>
+    <img class="imgtab" src="Media/1.jpg" alt="image">
+    <br />
+    <img class="imgtab" src="Media/2.jpg" alt="image">
+    <br />
+    <img class="imgtab" src="Media/3.jpg" alt="image">
+    <br />
+    <img class="imgtab" src="Media/4.jpg" alt="image">
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>
