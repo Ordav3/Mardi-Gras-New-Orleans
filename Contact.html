@@ -17,6 +17,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
+        #dataDiv {
+            margin-top: 100px;
+            position: absolute;
+            padding-left: 42%;
+        }
+
         body {
             padding-top: 60px;
             padding-bottom: 40px;
@@ -84,35 +90,32 @@
             height: 823px;
             margin: 0 auto;
         } */
-
-        .exp h1 {
-            text-align: center;
-            font-family: 'La Belle Aurore', cursive;
-        }
-
-        .exp p {
-            font-family: 'sans-serif';
-        }
-
-        h1,
-        h3 {
-            text-align: center;
+        h1 {
             font-family: 'La Belle Aurore', cursive;
             color: #9453a6;
+            text-align: center;
         }
 
-
-        .advButton2 {
-            background-color: rebeccapurple;
-            border: 2px solid #0d0d0d;
-            color: white;
-            padding: 5px 10px;
+        p,
+        tr,
+        summary {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #8cbf3f;
             text-align: center;
-            display: inline-block;
-            font-size: 20px;
-            margin: 10px 30px;
-            cursor: pointer;
-            border-radius: 50%;
+        }
+
+        .form {
+            padding-left: 38%;
+            text-align: center
+        }
+
+        /*  button {
+            color: #9453a6;
+            position: absolute;
+            left: 48%;
+        } */
+        label {
+            color: #f2cc0f;
         }
 
         @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nanum+Gothic:wght@400;700;800&display=swap');
@@ -130,11 +133,6 @@
                 float: none;
                 left: 20vw;
             }
-        }
-
-        p {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color: #f2f2f2;
         }
 
         /* Hamburger______________*/
@@ -216,22 +214,6 @@
             }
 
         }
-
-        /* yyyyyy */
-        .pic {
-            display: block;
-            margin: 0 auto;
-            width: 40%;
-            border: 3px solid cyan;
-            height: 100pt;
-            width: 100pt;
-        }
-
-        .spons {
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-style: 1rem;
-        }
     </style>
 </head>
 
@@ -267,7 +249,157 @@
             </nav>
         </div>
     </div>
+    <br>
+    <!--
+    <h1>Contact us:</h1>
+    <div class="form">
+        <form id="registerForm">
 
+            <table>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text" id="nameTB" required /></td>
+                </tr>
+                <tr>
+                    <td>LastName</td>
+                    <td><input type="text" id="LastNameTB" required /></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>
+                        <input type="email" id="email" pattern=".+@globex\.com" size="30" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>TextArea</td>
+                    <td>
+                        <textarea id="TextTD" rows="4" cols="50" name="comment"></textarea>
+                    </td>
+
+                </tr>
+                <br>
+            </table>
+            <br>
+            <button>Submit</button>
+        </form>
+    </div>
+
+    <div id="dataDiv">
+        <h1>More informetion</h1>
+        <details>
+            <summary>Press me</summary>
+            <p>please contact press@mardigrasneworleans.com.</p>
+        </details>
+    </div> 
+
+
+
+
+-->
+
+
+
+
+
+    <!--Section: Contact v.2-->
+    <section class="mb-4">
+
+        <!--Section heading-->
+        <h1 class="h1-responsive font-weight-bold text-center my-4">Contact us</h1>
+        <!--Section description-->
+        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us
+            directly. Our team will come back to you within
+            a matter of hours to help you.</p>
+
+        <div class="row">
+
+            <!--Grid column-->
+            <div class="col-md-9 mb-md-0 mb-5">
+                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="name" name="name" class="form-control">
+                                <label for="name" class="">Your name</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-6">
+                            <div class="md-form mb-0">
+                                <input type="text" id="email" name="email" class="form-control">
+                                <label for="email" class="">Your email</label>
+                            </div>
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="md-form mb-0">
+                                <input type="text" id="subject" name="subject" class="form-control">
+                                <label for="subject" class="">Subject</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                    <!--Grid row-->
+                    <div class="row">
+
+                        <!--Grid column-->
+                        <div class="col-md-12">
+
+                            <div class="md-form">
+                                <textarea type="text" id="message" name="message" rows="2"
+                                    class="form-control md-textarea"></textarea>
+                                <label for="message">Your message</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--Grid row-->
+
+                </form>
+
+                <div class="text-center text-md-left">
+                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                </div>
+                <div class="status"></div>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-3 text-center">
+                <ul class="list-unstyled mb-0">
+                    <li><!--<i class="fas fa-map-marker-alt fa-2x"></i>-->
+                        <p>New Orleans, LA 94126, USA</p>
+                    </li>
+                    <br>
+                    <br>
+                    <li><!--<i class="fas fa-phone mt-4 fa-2x"></i> -->
+                        <p>+ 504 234 567 89</p>
+                    </li>
+                    <br>
+                    <br>
+                    <li><!--<i class="fas fa-envelope mt-4 fa-2x"></i>-->
+                        <p>press@mardigrasneworleans.com</p>
+                    </li>
+                </ul>
+            </div>
+            <!--Grid column-->
+        </div>
+
+    </section>
+    <!--Section: Contact v.2-->
     <div class="fixed-footer">
         <div class="container_buttom">Copyright &copy; ORDAV 2023</div>
     </div>

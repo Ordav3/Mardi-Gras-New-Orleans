@@ -16,6 +16,10 @@
     <link rel="shortcut icon" href="Media/minilogo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <style>
         body {
             padding-top: 60px;
@@ -79,40 +83,11 @@
             top: 1px;
         }
 
-        /*   div img {
-            width: 100%;
-            height: 823px;
-            margin: 0 auto;
-        } */
-
-        .exp h1 {
-            text-align: center;
-            font-family: 'La Belle Aurore', cursive;
-        }
-
-        .exp p {
-            font-family: 'sans-serif';
-        }
-
         h1,
         h3 {
             text-align: center;
             font-family: 'La Belle Aurore', cursive;
             color: #9453a6;
-        }
-
-
-        .advButton2 {
-            background-color: rebeccapurple;
-            border: 2px solid #0d0d0d;
-            color: white;
-            padding: 5px 10px;
-            text-align: center;
-            display: inline-block;
-            font-size: 20px;
-            margin: 10px 30px;
-            cursor: pointer;
-            border-radius: 50%;
         }
 
         @import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Nanum+Gothic:wght@400;700;800&display=swap');
@@ -132,10 +107,10 @@
             }
         }
 
-        p {
+        /*   p {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             color: #f2f2f2;
-        }
+        }  */
 
         /* Hamburger______________*/
 
@@ -216,22 +191,6 @@
             }
 
         }
-
-        /* yyyyyy */
-        .pic {
-            display: block;
-            margin: 0 auto;
-            width: 40%;
-            border: 3px solid cyan;
-            height: 100pt;
-            width: 100pt;
-        }
-
-        .spons {
-            text-align: center;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-style: 1rem;
-        }
     </style>
 </head>
 
@@ -240,12 +199,11 @@
         <div class="container">
             <nav>
                 <div class="topnav" id="myTopnav">
-
                     <span>
                         <img src="Media/Logo.png" alt="Logo">
                     </span>
                     <a href="/home.html" class="active">Home</a>
-                    <a href="/about.html">About</a>
+                    <a href="/About.html">About</a>
                     <a href="/media.html">Media</a>
                     <a href="/faq.html">Faq</a>
                     <a href="/contact.html">Contact</a>
@@ -267,10 +225,58 @@
             </nav>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1>Frequently Asked Questions</h1>
+    <br>
+    <div id="accordion">
+        <h1>Where was the first known carnival celebration?</h1>
+        <div>
+            <p>
+                Nice, France
+            </p>
+        </div>
+        <h1>What is the most popular Mardi Gras saying?</h1>
+        <div>
+            <p>
+                "Laissez les bon temps rouler."
+            </p>
+        </div>
+        <h1>Mardi Gras may have links to what Roman celebrations?</h1>
+        <div>
+            <p>
+                Lupercalia and Saturnalia
+            </p>
+        </div>
+        <h1>SIn which year did Mardi Gras move its New Orleans celebration dates to not interfere with the
+            Super Bowl?
+        </h1>
+        <div>
+            <p>
+                2013
+            </p>
+        </div>
+    </div>
 
     <div class="fixed-footer">
         <div class="container_buttom">Copyright &copy; ORDAV 2023</div>
     </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        $(function () {
+            $("#accordion").accordion();
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
@@ -280,6 +286,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>
